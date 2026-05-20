@@ -268,7 +268,7 @@ function ArwenPage() {
             initial={{ opacity: 0, x: -20, rotate: -10 }}
             animate={{ opacity: 1, x: 0, rotate: 0 }}
             transition={{ duration: 0.9 }}
-            className="pointer-events-none absolute -left-3 top-2 h-20 w-20 select-none animate-float"
+            className="pointer-events-none absolute -left-3 top-2 z-30 h-20 w-20 select-none animate-float"
             style={{ filter: "drop-shadow(0 0 14px var(--glow))" }}
           />
           <motion.img
