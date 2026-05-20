@@ -84,6 +84,14 @@ const links = [
   },
 ];
 
+const findHere = [
+  { icon: Joystick, title: "Games", sub: "jogos, dicas e momentos das lives!" },
+  { icon: Brush, title: "Make & Lifestyle", sub: "makes, rotina, cuidados e meu dia a dia!" },
+  { icon: Library, title: "Livros & Coleções", sub: "indicações, coleções e paixões!" },
+  { icon: MonitorSmartphone, title: "Setup & Tech", sub: "meu cantinho gamer e produtinhos!" },
+  { icon: Camera, title: "Vlogs & Momentos", sub: "vlogs, viagens, eventos e bastidores!" },
+];
+
 const about = [
   { icon: Heart, title: "23 anos", lines: ["Escorpiana", "INTJ-T", "música, café & dias chuvosos"] },
   { icon: Gamepad2, title: "Games favoritos", lines: ["The Sims 4", "Life is Strange", "Genshin Impact", "Stardew Valley"] },
