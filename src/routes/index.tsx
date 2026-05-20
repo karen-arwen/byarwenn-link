@@ -328,6 +328,83 @@ function ArwenPage() {
           </p>
         </motion.div>
 
+        {/* ===== O QUE VOCÊ VAI ENCONTRAR ===== */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="glass relative mt-12 w-full rounded-3xl p-5 ring-1 ring-[var(--lilac)]/25"
+        >
+          <SparklesIcon className="absolute -left-2 -top-2 h-4 w-4 text-[var(--lilac)] animate-twinkle" />
+          <SparklesIcon className="absolute -right-2 -top-2 h-4 w-4 text-[var(--glow)] animate-twinkle" style={{ animationDelay: "1s" }} />
+          <div className="mb-5 flex items-center justify-center gap-3">
+            <div className="h-px w-8 bg-gradient-to-r from-transparent to-[var(--lilac)]/60" />
+            <span className="text-[10px] uppercase tracking-[0.32em] text-[var(--lilac)]">
+              ✦ o que você vai encontrar por aqui ✦
+            </span>
+            <div className="h-px w-8 bg-gradient-to-l from-transparent to-[var(--lilac)]/60" />
+          </div>
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+            {findHere.map((f, i) => (
+              <motion.div
+                key={f.title}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.06 }}
+                whileHover={{ y: -3 }}
+                className="glass relative flex flex-col items-center gap-2 rounded-2xl p-3 text-center ring-1 ring-[var(--lilac)]/25 transition-all hover:ring-lilac"
+              >
+                <div className="grid h-12 w-12 place-items-center rounded-2xl bg-gradient-to-br from-[var(--lavender)]/50 to-[var(--glow)]/35 ring-1 ring-[var(--lilac)]/40 shadow-[0_0_20px_oklch(0.72_0.25_325/0.35)]">
+                  <f.icon className="h-5 w-5 text-white" />
+                </div>
+                <div className="text-[10px] font-bold uppercase tracking-[0.18em] text-[var(--lilac)]">
+                  {f.title}
+                </div>
+                <p className="text-[11px] leading-snug text-[var(--muted-foreground)]">{f.sub}</p>
+                <Heart className="h-3 w-3 fill-[var(--glow)]/70 text-[var(--glow)]/70" />
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* ===== CTA card ===== */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="relative mt-12 w-full"
+        >
+          {/* deco cat left */}
+          <div className="pointer-events-none absolute -left-2 -top-6 select-none text-4xl animate-float" aria-hidden style={{ filter: "drop-shadow(0 0 10px var(--glow))" }}>
+            🐈‍⬛
+          </div>
+          {/* deco coffee right */}
+          <div className="pointer-events-none absolute -right-2 -top-6 select-none text-4xl animate-float" style={{ animationDelay: "1.5s", filter: "drop-shadow(0 0 10px var(--glow))" }} aria-hidden>
+            ☕
+          </div>
+          <div className="glass relative flex flex-col items-center gap-3 rounded-3xl px-6 py-7 text-center ring-1 ring-[var(--lilac)]/35 glow-lilac">
+            <SparklesIcon className="absolute left-4 top-4 h-3.5 w-3.5 text-[var(--lilac)] animate-twinkle" />
+            <SparklesIcon className="absolute right-4 top-4 h-3.5 w-3.5 text-[var(--glow)] animate-twinkle" style={{ animationDelay: "1.2s" }} />
+            <p className="font-script text-3xl leading-tight text-[var(--lilac)]">
+              vamos criar algo<br />incrível juntos? ✨
+            </p>
+            <motion.a
+              href="mailto:by.arwenn.contato@gmail.com"
+              whileHover={{ y: -2, scale: 1.03 }}
+              whileTap={{ scale: 0.97 }}
+              className="mt-1 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[var(--lavender)] to-[var(--glow)] px-6 py-2.5 text-sm font-semibold text-white shadow-[0_0_30px_oklch(0.72_0.25_325/0.6)] ring-1 ring-white/20"
+            >
+              me chama! <ArrowDown className="h-4 w-4" />
+            </motion.a>
+            <p className="mt-1 text-[11px] text-[var(--muted-foreground)]">
+              by.arwenn.contato@gmail.com 💜
+            </p>
+          </div>
+        </motion.div>
+
         {/* ===== SOCIAL ICONS ===== */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
