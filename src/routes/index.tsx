@@ -19,7 +19,7 @@ import {
 import hero from "@/assets/arwen-hero.png";
 import anime from "@/assets/arwen-anime.png";
 import illuMoon from "@/assets/illu-moon.png";
-import illuCat from "@/assets/illu-cat.png";
+import illuDragon from "@/assets/illu-dragon.png";
 import illuBooks from "@/assets/illu-books.png";
 import illuController from "@/assets/illu-controller.png";
 import illuLipstick from "@/assets/illu-lipstick.png";
