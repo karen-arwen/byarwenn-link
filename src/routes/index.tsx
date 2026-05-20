@@ -202,7 +202,7 @@ const linkMeta = [
 ];
 
 const aboutIllus = [illuHeart, illuMusic, illuController, illuBooks];
-const lovesIllus = [illuLipstick, illuMusic, illuBooks, illuController, illuMoon, illuHeart];
+const lovesIllus = [illuLipstick, illuMusic, illuBooks, illuController, illuMoon, illuDragon];
 
 const socials = [
   { icon: Twitch, href: "https://twitch.tv/byarwenn", label: "Twitch" },
