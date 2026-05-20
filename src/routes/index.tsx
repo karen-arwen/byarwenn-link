@@ -548,14 +548,14 @@ function ArwenPage() {
               {c.cozyTag}
             </div>
             <img
-              src={illuCat}
+              src={illuDragon}
               alt=""
               aria-hidden
               width={64}
               height={64}
               loading="lazy"
-              className="absolute right-3 top-3 h-14 w-14 animate-float"
-              style={{ filter: "drop-shadow(0 0 10px var(--glow))" }}
+              className="absolute right-3 top-3 z-20 h-16 w-16 animate-float"
+              style={{ filter: "drop-shadow(0 0 12px var(--glow))" }}
             />
           </div>
           <p className="mt-3 text-center text-xs italic text-[var(--muted-foreground)]">
