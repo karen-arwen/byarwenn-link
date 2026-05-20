@@ -19,7 +19,7 @@ import {
 import hero from "@/assets/arwen-hero.png";
 import anime from "@/assets/arwen-anime.png";
 import illuMoon from "@/assets/illu-moon.png";
-import illuCat from "@/assets/illu-cat.png";
+import illuDragon from "@/assets/illu-dragon.png";
 import illuBooks from "@/assets/illu-books.png";
 import illuController from "@/assets/illu-controller.png";
 import illuLipstick from "@/assets/illu-lipstick.png";
@@ -67,10 +67,10 @@ const t = {
     quote: '"vivendo entre joguinhos, livros & noites roxinhas" 💜',
     ctaTitle: (
       <>
-        vamos criar algo<br />incrível juntos? ✨
+        bora trocar uma<br />ideia? ✨
       </>
     ),
-    ctaButton: "me chama!",
+    ctaButton: "manda um oi!",
     findMe: "me encontre por aí",
     footer: "© 2026 Arwen — feito com ♡",
     links: [
@@ -138,7 +138,7 @@ const t = {
     quote: '"living between games, books & purple nights" 💜',
     ctaTitle: (
       <>
-        let's create something<br />amazing together? ✨
+        wanna chat a<br />little? ✨
       </>
     ),
     ctaButton: "say hi!",
@@ -202,7 +202,7 @@ const linkMeta = [
 ];
 
 const aboutIllus = [illuHeart, illuMusic, illuController, illuBooks];
-const lovesIllus = [illuLipstick, illuMusic, illuBooks, illuController, illuMoon, illuHeart];
+const lovesIllus = [illuLipstick, illuMusic, illuBooks, illuController, illuMoon, illuDragon];
 
 const socials = [
   { icon: Twitch, href: "https://twitch.tv/byarwenn", label: "Twitch" },
@@ -268,7 +268,7 @@ function ArwenPage() {
             initial={{ opacity: 0, x: -20, rotate: -10 }}
             animate={{ opacity: 1, x: 0, rotate: 0 }}
             transition={{ duration: 0.9 }}
-            className="pointer-events-none absolute -left-3 top-2 h-20 w-20 select-none animate-float"
+            className="pointer-events-none absolute -left-3 top-2 z-30 h-20 w-20 select-none animate-float"
             style={{ filter: "drop-shadow(0 0 14px var(--glow))" }}
           />
           <motion.img
@@ -278,7 +278,7 @@ function ArwenPage() {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.9, delay: 0.1 }}
-            className="pointer-events-none absolute -right-3 top-4 h-16 w-16 select-none animate-float"
+            className="pointer-events-none absolute -right-3 top-4 z-30 h-16 w-16 select-none animate-float"
             style={{ animationDelay: "1.5s", filter: "drop-shadow(0 0 12px var(--glow))" }}
           />
 
@@ -548,14 +548,14 @@ function ArwenPage() {
               {c.cozyTag}
             </div>
             <img
-              src={illuCat}
+              src={illuDragon}
               alt=""
               aria-hidden
               width={64}
               height={64}
               loading="lazy"
-              className="absolute right-3 top-3 h-14 w-14 animate-float"
-              style={{ filter: "drop-shadow(0 0 10px var(--glow))" }}
+              className="absolute right-3 top-3 z-20 h-16 w-16 animate-float"
+              style={{ filter: "drop-shadow(0 0 12px var(--glow))" }}
             />
           </div>
           <p className="mt-3 text-center text-xs italic text-[var(--muted-foreground)]">
@@ -572,14 +572,14 @@ function ArwenPage() {
           className="relative mt-14 w-full"
         >
           <img
-            src={illuCat}
+            src={illuDragon}
             alt=""
             aria-hidden
             width={64}
             height={64}
             loading="lazy"
-            className="pointer-events-none absolute -left-3 -top-10 h-16 w-16 animate-float"
-            style={{ filter: "drop-shadow(0 0 10px var(--glow))" }}
+            className="pointer-events-none absolute -left-3 -top-10 z-30 h-16 w-16 animate-float"
+            style={{ filter: "drop-shadow(0 0 12px var(--glow))" }}
           />
           <img
             src={illuHeart}
@@ -588,7 +588,7 @@ function ArwenPage() {
             width={64}
             height={64}
             loading="lazy"
-            className="pointer-events-none absolute -right-3 -top-10 h-16 w-16 animate-float"
+            className="pointer-events-none absolute -right-3 -top-10 z-30 h-16 w-16 animate-float"
             style={{ animationDelay: "1.5s", filter: "drop-shadow(0 0 10px var(--glow))" }}
           />
           <div className="glass relative flex flex-col items-center gap-3 rounded-[2rem] px-6 py-7 text-center ring-1 ring-[var(--lilac)]/35 glow-lilac">
