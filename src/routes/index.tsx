@@ -138,7 +138,7 @@ const t = {
     quote: '"living between games, books & purple nights" 💜',
     ctaTitle: (
       <>
-        let's create something<br />amazing together? ✨
+        wanna chat a<br />little? ✨
       </>
     ),
     ctaButton: "say hi!",
