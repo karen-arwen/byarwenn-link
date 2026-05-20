@@ -67,10 +67,10 @@ const t = {
     quote: '"vivendo entre joguinhos, livros & noites roxinhas" 💜',
     ctaTitle: (
       <>
-        vamos criar algo<br />incrível juntos? ✨
+        bora trocar uma<br />ideia? ✨
       </>
     ),
-    ctaButton: "me chama!",
+    ctaButton: "manda um oi!",
     findMe: "me encontre por aí",
     footer: "© 2026 Arwen — feito com ♡",
     links: [
