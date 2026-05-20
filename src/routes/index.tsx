@@ -572,14 +572,14 @@ function ArwenPage() {
           className="relative mt-14 w-full"
         >
           <img
-            src={illuCat}
+            src={illuDragon}
             alt=""
             aria-hidden
             width={64}
             height={64}
             loading="lazy"
-            className="pointer-events-none absolute -left-3 -top-10 h-16 w-16 animate-float"
-            style={{ filter: "drop-shadow(0 0 10px var(--glow))" }}
+            className="pointer-events-none absolute -left-3 -top-10 z-30 h-16 w-16 animate-float"
+            style={{ filter: "drop-shadow(0 0 12px var(--glow))" }}
           />
           <img
             src={illuHeart}
@@ -588,7 +588,7 @@ function ArwenPage() {
             width={64}
             height={64}
             loading="lazy"
-            className="pointer-events-none absolute -right-3 -top-10 h-16 w-16 animate-float"
+            className="pointer-events-none absolute -right-3 -top-10 z-30 h-16 w-16 animate-float"
             style={{ animationDelay: "1.5s", filter: "drop-shadow(0 0 10px var(--glow))" }}
           />
           <div className="glass relative flex flex-col items-center gap-3 rounded-[2rem] px-6 py-7 text-center ring-1 ring-[var(--lilac)]/35 glow-lilac">
