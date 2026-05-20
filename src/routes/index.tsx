@@ -14,6 +14,12 @@ import {
   Star,
   ChevronRight,
   MessageCircle,
+  Joystick,
+  Brush,
+  Library,
+  MonitorSmartphone,
+  Camera,
+  ArrowDown,
 } from "lucide-react";
 import hero from "@/assets/arwen-hero.png";
 import anime from "@/assets/arwen-anime.png";
